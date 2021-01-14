@@ -1,0 +1,24 @@
+{
+    "identifier": "io.barrow.duplicates",
+    "name": "Delete Duplicates",
+    "organization": "Kyle Barrow",
+    "description": "Delete duplicate lines",
+    "version": "1.0",
+    "repository": "https://github.com/kylebarrow/Duplicates.novaextension",
+    "bugs": "https://github.com/kylebarrow/Duplicates.novaextension/issues",
+    "categories": ["commands"],  
+    "main": "main.js",
+    "activationEvents": [
+        "onLanguage:javascript"
+    ],
+    "entitlements": {},
+    "commands": {
+        "editor": [
+            {
+                "title": "Delete Duplicate Lines",
+                "command": "duplicates.deleteSelectionDuplicates",
+                "when": "editorHasFocus && editorHasSelection"
+            }
+        ]
+    }
+}
